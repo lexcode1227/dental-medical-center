@@ -108,6 +108,7 @@ export interface Widget {
 export interface Headline {
   title?: string;
   subtitle?: string;
+  text?: string;
   tagline?: string;
   classes?: Record<string, string>;
 }
@@ -234,6 +235,7 @@ export interface Pricing extends Omit<Headline, 'classes'>, Widget {
 export interface Testimonials extends Omit<Headline, 'classes'>, Widget {
   testimonials?: Array<Testimonial>;
   callToAction?: CallToAction;
+  imageSlider?: boolean;
 }
 
 export interface Brands extends Omit<Headline, 'classes'>, Widget {
@@ -271,6 +273,7 @@ export interface Steps extends Omit<Headline, 'classes'>, Widget {
 export interface Content extends Omit<Headline, 'classes'>, Widget {
   content?: string;
   image?: string | unknown;
+  verticalAlign?: boolean;
   items?: Array<Item>;
   columns?: number;
   isReversed?: boolean;

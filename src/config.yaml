@@ -1,22 +1,22 @@
 site:
-  name: AstroWind
+  name: Dental Medical Center
   site: 'https://astrowind.vercel.app'
   base: '/'
   trailingSlash: false
-
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  # googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
 
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  default: Dental Medical Center
+  template: 'Dental Medical Center'
+  description: "Dental Medical Center is a modern and responsive HTML5 template designed for dental clinics, medical centers, and healthcare professionals. It features a clean and professional design, with customizable sections for services, team members, testimonials, and more. The template is built with the latest web technologies, ensuring fast loading times and optimal performance on all devices."
+  keywords: 'AstroWind, Astro, Template, Theme, HTML5, CSS3, JavaScript, Web Design, Web Development'
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Dental Medical Center
     images:
       - url: '~/assets/images/default.png'
         width: 1200

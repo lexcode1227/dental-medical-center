@@ -90,3 +90,26 @@
 .dd *:first-child {
   margin-top: 0;
 }
+
+.custom-gradient-shadow::after {
+  content: '';
+  position: absolute;
+  top: -32px;
+  right: -32px;
+  left: 32px;
+  bottom: 32px;
+  z-index: 0;
+  border-radius: 6px;
+  pointer-events: none;
+  background: linear-gradient(
+    1deg,
+    #25B4F8 100%,
+    #25B4F8 50%,
+    #25B4F8 0%
+  );
+  opacity: 0.4;
+}
+.custom-gradient-shadow > * {
+  position: relative;
+  z-index: 1;
+}
