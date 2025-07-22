@@ -1,0 +1,62 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import ContactUs from '~/components/widgets/Contact.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+
+const metadata = {
+  title: 'Contact',
+};
+---
+
+<Layout metadata={metadata}>
+  <HeroText tagline="Contacto" title="Conectemos!" />
+
+  <ContactUs
+    id="form"
+    title="Envíanos un mensaje hoy!"
+    subtitle="Para respuestas más rápidas, explora nuestra sección de preguntas frecuentes. ¡Puede que encuentres la solución que estás buscando allí! Si no, nuestro equipo de soporte está encantado de ayudarte."
+    inputs={[
+      {
+        type: 'text',
+        name: 'name',
+        label: 'Nombre',
+      },
+      {
+        type: 'email',
+        name: 'email',
+        label: 'Email',
+      },
+    ]}
+    textarea={{
+      label: 'Mensaje',
+    }}
+    disclaimer={{
+      label:
+        'Al enviar este formulario de contacto, aceptas y aceptas la recopilación de tu información personal.',
+    }}
+    button="Enviar"
+    description="Nuestro equipo de soporte generalmente responde dentro de 24 horas hábiles."
+  />
+
+  <Features2
+    title="Estamos aquí para ayudarte!"
+    items={[
+      {
+        title: 'Teléfono',
+        description: '+1 (234) 567-890',
+        icon: 'tabler:headset',
+      },
+      {
+        title: 'Correo electrónico',
+        description: 'contact@support.com',
+        icon: 'tabler:mail',
+      },
+      {
+        title: 'Ubicación',
+        description: '1234 Lorem Ipsum St, 12345, San Salvador, El Salvador',
+        icon: 'tabler:map-pin',
+      },
+    ]}
+  />
+</Layout>

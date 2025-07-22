@@ -1,0 +1,124 @@
+---
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Servicios',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    tagline="Servicios"
+    title="Mantén tu sonrisa saludable y hermosa"
+    subtitle="Explora nuestros servicios para mantener tu sonrisa saludable y hermosa."
+    actions={[
+      {
+        variant: 'primary',
+        target: '_blank',
+        text: 'Agendar cita',
+        href: 'https://calendly.com/henryagustin297/introductory-call',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/alergias-a-materiales-dentales.jpg',
+      alt: 'Centro Médico Dental',
+    }}
+  />
+
+  <Features2
+    title="Explora nuestros servicios"
+    subtitle="Descubre nuestros servicios para mantener tu sonrisa saludable y hermosa."
+    columns={3}
+    items={[
+      {
+        title: 'Tratamiento de Endodoncia',
+        description:
+          'Especialistas en endodoncia con tecnología avanzada para eliminar infecciones y preservar tu diente natural de forma indolora.',
+        icon: 'rootCanalTreatment',
+      },
+      {
+        title: 'Odontología Estética',
+        description:
+          'Transforma tu sonrisa con nuestros tratamientos cosméticos: blanqueamiento, carillas, y diseño de sonrisa personalizado.',
+        icon: 'cosmeticDentist',
+      },
+      {
+        title: 'Implantes Dentales',
+        description:
+          'Recupera la funcionalidad y estética de tus dientes con implantes de titanio de última generación y prótesis personalizadas.',
+        icon: 'dentalImplants',
+      },
+      {
+        title: 'Blanqueamiento Dental',
+        description:
+          'Transforma tu sonrisa con nuestros tratamientos cosméticos: blanqueamiento, carillas, y diseño de sonrisa personalizado.',
+        icon: 'teethWhitening',
+      },
+      {
+        title: 'Emergencias Dentales',
+        description:
+          'En general cualquier problema que necesite tratamiemto inmediato para aliviar dolor o para evitar complicaciones.',
+        icon: 'emergencyDentistry',
+      },
+      {
+        title: 'Prevención',
+        description:
+          'Prevención dental es el cuidado dental que ayuda a mantener una buena salud bucal. una combinación de cuidado dental regular y visitas periódicas al odontólogo.',
+        icon: 'prevention',
+      },
+    ]}
+  />
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Sonrisas Saludables y Duraderas',
+        description:
+          'Nuestro compromiso es cuidar tu salud bucal para que disfrutes de una sonrisa radiante y funcional durante toda tu vida.',
+        icon: 'tabler:heart',
+      },
+      {
+        title: 'Atención Personalizada',
+        description:
+          'Cada paciente es único. Te ofrecemos un trato cercano y soluciones adaptadas a tus necesidades para que te sientas en confianza y seguro.',
+        icon: 'tabler:user-heart',
+      },
+      {
+        title: 'Tecnología de Vanguardia',
+        description:
+          'Utilizamos equipos y técnicas modernas para garantizar tratamientos precisos, cómodos y efectivos.',
+        icon: 'tabler:device-desktop-analytics',
+      },
+      {
+        title: 'Prevención y Educación',
+        description:
+          'Te acompañamos en el cuidado diario de tu salud bucal, brindándote consejos y revisiones periódicas para evitar problemas futuros.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Atención Rápida en Emergencias',
+        description:
+          'Estamos listos para atenderte cuando más lo necesitas, aliviando molestias y resolviendo urgencias dentales de manera eficiente.',
+        icon: 'tabler:alert-triangle',
+      },
+      {
+        title: 'Ambiente Cálido y Seguro',
+        description:
+          'Creamos un entorno agradable y seguro para que tu experiencia en la clínica sea siempre positiva.',
+        icon: 'tabler:home-heart',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/uso-prolongado-de-implantes-dentales.jpg',
+      alt: 'Benefits Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Beneficios</h3>
+    </Fragment>
+  </Content>
+</Layout>

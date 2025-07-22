@@ -1,0 +1,132 @@
+---
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Nosotros',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero2
+    tagline="Nosotros"
+    title="Nuestra misión"
+    subtitle="Nuestra misión es brindar atención dental de calidad a nuestros pacientes, con un enfoque en la prevención y el cuidado de la salud bucal."
+    image={{
+      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Caos Image',
+    }}
+  />
+  <Hero2
+    title="Nuestra visión"
+    subtitle="Ser una clínica dental líder en la ciudad, reconocida por nuestra excelencia en la atención, tecnología y compromiso con la salud bucal de nuestros pacientes."
+    image={{
+      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Caos Image',
+    }}
+  />
+
+  <Stats
+    title="Estadísticas"
+    stats={[
+      { title: 'Pacientes', amount: '+100' },
+      { title: 'Empleados', amount: '20' },
+      { title: 'Citas mensuales', amount: '+1000' },
+      { title: 'Años de experiencia', amount: '+5' },
+    ]}
+  />
+
+  <Steps2
+    title="Nuestros valores"
+    subtitle="Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus. Nulla facilisi. Vestibulum malesuada lacus."
+    items={[
+      {
+        title: 'Compromiso',
+        description:
+          'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo. Ut eleifend luctus condimentum.',
+      },
+      {
+        title: 'Excelencia',
+        description:
+          'Phasellus laoreet fermentum venenatis. Vivamus dapibus pulvinar arcu eget mattis. Fusce eget mauris leo.',
+      },
+      {
+        title: 'Trabajo en equipo',
+        description:
+          'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+      },
+    ]}
+  />
+
+  <Steps2
+    title="Logros"
+    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
+    isReversed={true}
+    items={[
+      {
+        title: 'Reconocimiento como Clínica Dental Destacada 2023',
+        description: 'Nam malesuada urna in enim imperdiet tincidunt. Phasellus non tincidunt nisi, at elementum mi.',
+        icon: 'tabler:globe',
+      },
+      {
+        title: 'Premio al Mejor Tratamiento de Implantes Dentales 2024',
+        description:
+          'Cras semper nulla leo, eget laoreet erat cursus sed. Praesent faucibus massa in purus iaculis dictum.',
+        icon: 'tabler:message-star',
+      },
+      {
+        title: 'Premio como expertos en la industria',
+        description:
+          'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
+        icon: 'tabler:award',
+      },
+    ]}
+  />
+
+  <Features2
+    title="Nuestras ubicaciones"
+    tagline="Encuéntranos"
+    columns={4}
+    items={[
+      {
+        title: 'San Salvador',
+        description: '1234 Lorem Ipsum St, 12345, San Salvador',
+      },
+      {
+        title: 'Santa Ana',
+        description: '5678 Lorem Ipsum St, 56789, Santa Ana',
+      },
+      {
+        title: 'San Miguel',
+        description: '9012 Lorem Ipsum St, 90123, San Miguel',
+      },
+      {
+        title: 'La Libertad',
+        description: '9012 Lorem Ipsum St, 90123, La Libertad',
+      },
+    ]}
+  />
+
+  <Features2
+    title="Soporte técnico"
+    tagline="Contáctanos"
+    columns={2}
+    items={[
+      {
+        title: 'Chatea con nosotros',
+        description:
+          'Integer luctus laoreet libero, auctor varius purus rutrum sit amet. Ut nec molestie nisi, quis eleifend mi.',
+        icon: 'tabler:messages',
+      },
+      {
+        title: 'Llámanos',
+        description:
+          'Mauris faucibus finibus orci, in posuere elit viverra non. In hac habitasse platea dictumst. Cras lobortis metus a hendrerit congue.',
+        icon: 'tabler:headset',
+      },
+    ]}
+  />
+</Layout>

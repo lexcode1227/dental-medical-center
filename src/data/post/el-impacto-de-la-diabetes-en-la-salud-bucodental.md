@@ -1,14 +1,14 @@
 ---
 publishDate: 2023-08-06T00:00:00Z
-title: How to customize AstroWind template to suit your branding
-excerpt: Personalize AstroWind template for your brand. Our guide unlocks seamless customization steps for a unique online presence.
-image: https://images.unsplash.com/photo-1546984575-757f4f7c13cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80
+title: El impacto de la diabetes en la salud bucodental
+excerpt: La diabetes es una enfermedad crónica que afecta a millones de personas en todo el mundo, y aunque generalmente se asocia con problemas relacionados con los niveles de azúcar en la sangre, muchas personas desconocen el impacto directo que esta afección puede tener en la salud bucodental.
+category: Higiene Dental
+image: ~/assets/images/diabetes-y-salud-dental.jpg
 tags:
-  - astro
-  - tailwind css
-  - theme
+  - consejos
+  - enfermedades
 metadata:
-  canonical: https://astrowind.vercel.app/how-to-customize-astrowind-to-your-brand
+  canonical: https://vercel.app/el-impacto-de-la-diabetes-en-la-salud-bucodental
 ---
 
 ## Congue justo vulputate nascetur convallis varius orci fringilla nulla pharetr

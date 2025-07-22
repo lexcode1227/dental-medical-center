@@ -1,18 +1,15 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-
 import Hero from '~/components/widgets/Hero.astro';
 import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
 import { YouTube } from 'astro-embed';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Centro Médico Dental - Tu Sonrisa Perfecta',
   ignoreTitleTemplate: true,
 };
 ---
@@ -22,61 +19,64 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Book an appointment',
+        text: 'Reservar cita',
         href: 'https://calendly.com/henryagustin297/introductory-call',
         target: '_blank',
         icon: 'tabler:calendar-check',
       },
       {
         variant: 'secondary',
-        text: 'Phone number',
-        href: 'https://calendly.com/henryagustin297/introductory-call',
+        text: 'Llamar ahora',
+        href: 'tel:+1234567890',
         target: '_blank',
         icon: 'tabler:phone-call',
       },
     ]}
-    image={{ src: '~/assets/images/Dental-Image.png', alt: 'Orthodontist Image', }}
+    image={{ src: '~/assets/images/Dental-Image.png', alt: 'Centro Médico Dental' }}
   >
-    <Fragment slot="title">
-      Get ready for your best ever Dental Experience!
-    </Fragment>
+    <Fragment slot="title"> Tu sonrisa perfecta comienza aquí </Fragment>
 
     <Fragment slot="text">
-      We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.
+      En nuestro Centro Médico Dental utilizamos tecnología de vanguardia y los mejores materiales para brindarte
+      tratamientos dentales de calidad superior. Agenda tu cita hoy y descubre la diferencia de un cuidado dental
+      profesional.
     </Fragment>
   </Hero>
 
   <Features2
     items={[
       {
-        title: 'Root Canal Treatment',
-        description: "Root canal treatment (endodontics) is a dental procedure used to treat infection at the centre of a tooth.",
+        title: 'Tratamiento de Endodoncia',
+        description:
+          'Especialistas en endodoncia con tecnología avanzada para eliminar infecciones y preservar tu diente natural de forma indolora.',
         icon: 'rootCanalTreatment',
-          callToAction: {
+        callToAction: {
           variant: 'link',
-          text: 'Learn more',
+          text: 'Más información',
           href: '/services',
           icon: 'tabler:circle-chevron-right',
         },
       },
       {
-        title: 'Cosmetic Dentist',
-        description: "Cosmetic dentistry is the branch of dentistry that focuses on improving the appearance of your smile.",
+        title: 'Odontología Estética',
+        description:
+          'Transforma tu sonrisa con nuestros tratamientos cosméticos: blanqueamiento, carillas, y diseño de sonrisa personalizado.',
         icon: 'cosmeticDentist',
-          callToAction: {
+        callToAction: {
           variant: 'link',
-          text: 'Learn more',
+          text: 'Más información',
           href: '/services',
           icon: 'tabler:circle-chevron-right',
         },
       },
       {
-        title: 'Dental Implants',
-        description: 'A dental implant is an artificial tooth root that’s placed into your jaw to hold a prosthetic tooth or bridge.',
+        title: 'Implantes Dentales',
+        description:
+          'Recupera la funcionalidad y estética de tus dientes con implantes de titanio de última generación y prótesis personalizadas.',
         icon: 'dentalImplants',
         callToAction: {
           variant: 'link',
-          text: 'Learn more',
+          text: 'Más información',
           href: '/services',
           icon: 'tabler:circle-chevron-right',
         },
@@ -90,49 +90,50 @@ const metadata = {
 
   <Hero
     id="hero"
-    subtitle="We’re Welcoming New Patients And Can’t Wait To Meet You."
-    text="We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself."
+    subtitle="Recibimos nuevos pacientes con los brazos abiertos"
+    text="Nuestro equipo de especialistas está comprometido con brindarte la mejor experiencia dental en un ambiente cómodo y moderno. Tu bienestar es nuestra prioridad."
     actions={[
       {
         variant: 'primary',
-        text: 'Book an appointment',
+        text: 'Agendar consulta',
         href: 'https://calendly.com/henryagustin297/introductory-call',
         target: '_blank',
         icon: 'tabler:calendar-check',
       },
     ]}
-    image={{ 
-      src: 'https://images.unsplash.com/photo-1631051103633-24959376b92d?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
-      alt: 'Patient in Dental Clinic Image', 
+    image={{
+      src: 'https://images.unsplash.com/photo-1631051103633-24959376b92d?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Paciente en consulta dental',
     }}
-  >
-      
-  </Hero>
+  />
 
   <Content
     isReversed
     items={[
       {
-        title: 'Top quality dental team',
+        title: 'Equipo médico especializado',
       },
       {
-        title: 'State of the art dental services',
+        title: 'Tecnología dental de vanguardia',
       },
       {
-        title: 'Discount on all dental treatment',
+        title: 'Planes de financiamiento disponibles',
       },
       {
-        title: 'Enrollment is quick and easy',
+        title: 'Atención personalizada y cómoda',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1643663439099-6e153739c471?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      alt: 'A man working at a dental treatment Image',
+      alt: 'Dentista realizando tratamiento',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Why choose Smile for all your dental treatments?</h3>
-        We use only the best quality materials on the market in order to provide the best products to our patients.
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        ¿Por qué elegir nuestro Centro Médico Dental?
+      </h3>
+      Combinamos experiencia profesional, tecnología moderna y un enfoque humano para ofrecerte el mejor cuidado dental.
+      Tu sonrisa es nuestra pasión.
     </Fragment>
 
     <Fragment slot="bg">
@@ -142,32 +143,30 @@ const metadata = {
 
   <Hero
     id="hero"
-    subtitle="Leave your worries at the door and enjoy a healthier, more precise smile"
-    text="We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself."
+    subtitle="Deja tus preocupaciones en la puerta y disfruta de una sonrisa más saludable"
+    text="Con más de 15 años de experiencia, nuestros especialistas utilizan las técnicas más avanzadas para garantizar resultados excepcionales y tu total comodidad."
     actions={[
       {
         variant: 'primary',
-        text: 'Book an appointment',
+        text: 'Reservar cita',
         href: 'https://calendly.com/henryagustin297/introductory-call',
         target: '_blank',
         icon: 'tabler:calendar-check',
       },
     ]}
-    image={{ 
-      src: '~/assets/images/dental-Smile.png', 
-      alt: 'Patient in Dental Clinic Image', 
+    image={{
+      src: '~/assets/images/dental-Smile.png',
+      alt: 'Sonrisa perfecta después del tratamiento',
     }}
-  >
-      
-  </Hero>
+  />
 
   <Content
-    title="We’re welcoming new patients and can’t wait to meet you."
-    subtitle="We use only the best quality materials on the market in order to provide the best products to our patients."
+    title="Recibimos nuevos pacientes y estamos emocionados de conocerte"
+    subtitle="Nuestro compromiso es brindarte una experiencia dental excepcional desde tu primera visita hasta el seguimiento post-tratamiento."
     verticalAlign
   >
     <Fragment slot="image">
-      <YouTube id="jCgabJuypwg" title="Dr. Dee's Porcelain Veneers Treatment - Step by Step Guide" poster='' />
+      <YouTube id="jCgabJuypwg" title="Tratamiento de Carillas de Porcelana - Guía Paso a Paso" poster="" />
       <style is:inline>
         lite-youtube {
           margin: 0 auto;
@@ -178,55 +177,55 @@ const metadata = {
   </Content>
 
   <Testimonials
-    title="Meet our specialists"
-    subtitle="We use only the best quality materials on the market in order to provide the best products to our patients."
+    title="Conoce a nuestros especialistas"
+    subtitle="Un equipo multidisciplinario de profesionales altamente capacitados, comprometidos con tu bienestar dental y tu comodidad."
     testimonials={[
       {
-        name: 'Emily Kennedy',
-        job: 'Orthodontist',
+        name: 'Dra. Emily Kennedy',
+        job: 'Ortodoncista',
         image: {
           src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-          alt: 'Emily Kennedy Image',
+          alt: 'Dra. Emily Kennedy',
         },
       },
       {
-        name: 'Sarah Hansen',
-        job: 'Endodontist',
+        name: 'Dra. Sarah Hansen',
+        job: 'Endodoncista',
         image: {
           src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Sarah Hansen Image',
+          alt: 'Dra. Sarah Hansen',
         },
       },
       {
-        name: 'Mark Wilkinson',
-        job: 'Periodontist',
+        name: 'Dr. Mark Wilkinson',
+        job: 'Periodoncista',
         image: {
           src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
-          alt: 'Mark Wilkinson Image',
+          alt: 'Dr. Mark Wilkinson',
         },
       },
       {
-        name: 'Emily Kennedy',
-        job: 'Pediatric Dentist',
+        name: 'Dra. María González',
+        job: 'Odontopediatra',
         image: {
           src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-          alt: 'Emily Kennedy Image',
+          alt: 'Dra. María González',
         },
       },
       {
-        name: 'Sarah Hansen',
-        job: 'Periodontist',
+        name: 'Dr. Carlos Mendoza',
+        job: 'Cirujano Oral',
         image: {
           src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Sarah Hansen Image',
+          alt: 'Dr. Carlos Mendoza',
         },
       },
       {
-        name: 'Mark Wilkinson',
-        job: 'Orthodontist',
+        name: 'Dra. Ana Ruiz',
+        job: 'Prostodoncista',
         image: {
           src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
-          alt: 'Mark Wilkinson Image',
+          alt: 'Dra. Ana Ruiz',
         },
       },
     ]}
@@ -234,281 +233,104 @@ const metadata = {
   />
 
   <Testimonials
-      title="Our Happy Clients"
-      subtitle="We use only the best quality materials on the market in order to provide the best products to our patients."
-      testimonials={[
+    title="Lo que dicen nuestros pacientes"
+    subtitle="La confianza de nuestros pacientes es nuestro mayor logro. Estas son algunas de sus experiencias en nuestro centro."
+    testimonials={[
       {
-        testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
-        name: 'Emily Kennedy',
-        job: 'Front-end developer',
+        testimonial: `Excelente atención desde la recepción hasta el consultorio. La Dra. Kennedy me ayudó a tener la sonrisa que siempre quise con mi tratamiento de ortodoncia. El proceso fue cómodo y los resultados superaron mis expectativas.`,
+        name: 'María Fernández',
+        job: 'Arquitecta',
         image: {
           src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-          alt: 'Emily Kennedy Image',
+          alt: 'María Fernández',
         },
       },
       {
-        testimonial: `It beautifully showcases my work, with its clean and elegant design that lets my photographs shine. Customization was a breeze, even for a non-tech person like me. The result is a professional and immersive portfolio that's garnered numerous compliments.`,
-        name: 'Sarah Hansen',
-        job: 'Photographer',
+        testimonial: `Después de años de tener miedo al dentista, este centro cambió completamente mi perspectiva. El equipo es muy profesional y empático. Mi tratamiento de conducto fue completamente indoloro y la recuperación fue muy rápida.`,
+        name: 'Carlos López',
+        job: 'Profesor',
         image: {
           src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Sarah Hansen Image',
+          alt: 'Carlos López',
         },
       },
       {
-        testimonial: `I discovered these templates and I'm impressed by their variety and quality. They've helped me establish a consistent brand image across my marketing and social platforms, elevating my business's overall appearance.`,
-        name: 'Mark Wilkinson',
-        job: 'Small business owner',
+        testimonial: `Los implantes dentales que me colocaron han cambiado mi vida. Puedo comer y sonreír con total confianza. La tecnología que utilizan es impresionante y todo el proceso fue explicado detalladamente.`,
+        name: 'Ana Martínez',
+        job: 'Empresaria',
         image: {
           src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
-          alt: 'Mark Wilkinson Image',
+          alt: 'Ana Martínez',
         },
       },
       {
-        testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
-        name: 'Emily Kennedy',
-        job: 'Front-end developer',
+        testimonial: `Como madre, aprecio mucho la atención especializada que recibe mi hijo. La odontopediatra es muy paciente y hace que las visitas sean divertidas. Mi hijo ya no tiene miedo al dentista.`,
+        name: 'Laura Rodríguez',
+        job: 'Diseñadora',
         image: {
           src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-          alt: 'Emily Kennedy Image',
+          alt: 'Laura Rodríguez',
         },
       },
       {
-        testimonial: `It beautifully showcases my work, with its clean and elegant design that lets my photographs shine. Customization was a breeze, even for a non-tech person like me. The result is a professional and immersive portfolio that's garnered numerous compliments.`,
-        name: 'Sarah Hansen',
-        job: 'Photographer',
+        testimonial: `El blanqueamiento dental que me realizaron superó todas mis expectativas. Los resultados son naturales y duraderos. Todo el equipo es muy profesional y las instalaciones son de primera calidad.`,
+        name: 'Roberto Silva',
+        job: 'Ingeniero',
         image: {
           src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Sarah Hansen Image',
+          alt: 'Roberto Silva',
         },
       },
       {
-        testimonial: `I discovered these templates and I'm impressed by their variety and quality. They've helped me establish a consistent brand image across my marketing and social platforms, elevating my business's overall appearance.`,
-        name: 'Mark Wilkinson',
-        job: 'Small business owner',
+        testimonial: `La atención integral que recibí para mi rehabilitación oral fue excepcional. El Dr. Wilkinson coordinó todo mi tratamiento periodontal y los resultados han sido increíbles. Mi sonrisa luce completamente renovada.`,
+        name: 'Patricia Jiménez',
+        job: 'Abogada',
         image: {
           src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
-          alt: 'Mark Wilkinson Image',
+          alt: 'Patricia Jiménez',
         },
       },
     ]}
   />
 
-  <!-- Features Widget *************** -->
-
-  <!-- <Features
-    id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
-    items={[
-      {
-        title: 'Astro + Tailwind CSS Integration',
-        description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
-      },
-      {
-        title: 'Ready-to-use Components',
-        description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
-      },
-      {
-        title: 'Best Practices',
-        description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
-      },
-      {
-        title: 'Excellent Page Speed',
-        description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
-      },
-      {
-        title: 'Search Engine Optimization (SEO)',
-        description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
-      },
-      {
-        title: 'Open to new ideas and contributions',
-        description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
-      },
-    ]}
-  /> -->
-
-  <!-- Content Widget **************** -->
-
-  <!-- <Content
-    isAfterContent
-    items={[
-      {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
-      },
-      {
-        title: 'Multiple layout possibilities',
-        description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
-      },
-      {
-        title: 'Fully responsive design',
-        description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
-      },
-      {
-        title: 'Integration of media',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
-    }}
-  >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content> -->
-
-  <!-- Content Widget **************** -->
-
-  <!-- <Content
-    isReversed
-    isAfterContent
-    items={[
-      {
-        title: 'Enhanced user engagement',
-        description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
-      },
-      {
-        title: 'Continuous improvement',
-        description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
-      },
-      {
-        title: 'Time and resource efficiency',
-        description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
-      },
-      {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
-    }}
-  >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content> -->
-
-  <!-- Steps Widget ****************** -->
-
-  <Steps
-    title="Get your dream website up and running in no time with AstroWind."
-    items={[
-      {
-        title: 'Step 1: <span class="font-medium">Download</span>',
-        description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
-      },
-      {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
-        description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
-      },
-      {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
-        description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
-      },
-      {
-        title: 'Ready!',
-        icon: 'tabler:check',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
-    }}
-  />
-
-  <!-- HighlightedPosts Widget ******* -->
-
-  <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
-  />
-
-  <!-- FAQs Widget ******************* -->
+  <BlogLatestPosts title="Noticias y Artículos Dentales" />
 
   <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
-    tagline="FAQs"
+    title="Preguntas Frecuentes"
+    subtitle="Resolvemos las dudas más comunes sobre nuestros tratamientos dentales y servicios para que tengas toda la información que necesitas."
+    tagline="Preguntas Frecuentes"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: '¿Qué servicios dentales ofrecemos?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          'Ofrecemos una amplia gama de servicios dentales incluyendo: tratamientos de conducto, odontología estética, implantes dentales, ortodoncia, periodoncia, odontopediatría, cirugía oral, prótesis dentales, blanqueamiento dental, limpiezas profesionales y tratamientos preventivos.',
       },
       {
-        title: 'What do I need to start?',
+        title: '¿Necesito alguna preparación especial para mi primera consulta?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          'Para tu primera visita, te recomendamos traer tu historial médico, radiografías dentales previas (si las tienes), lista de medicamentos actuales, y tu documento de identificación. No necesitas ayunar ni hacer ninguna preparación especial, solo llegar unos minutos antes de tu cita.',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: '¿Aceptan seguros dentales y ofrecen planes de financiamiento?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          'Sí, trabajamos con los principales seguros dentales y ofrecemos planes de financiamiento flexibles para que puedas acceder a todos nuestros tratamientos. Nuestro equipo administrativo te ayudará a revisar tu cobertura y encontrar la mejor opción de pago para ti.',
       },
       {
-        title: "What's something that you don't understand?",
+        title: '¿Los tratamientos dentales son dolorosos?',
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          'Utilizamos técnicas modernas de anestesia local y sedación consciente para garantizar tu comodidad durante todos los procedimientos. Nuestro objetivo es que tengas una experiencia completamente libre de dolor y relajante.',
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: '¿Cuánto tiempo duran los tratamientos como implantes o ortodoncia?',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          'Los tiempos varían según cada caso. Los implantes dentales suelen completarse entre 3-6 meses, mientras que los tratamientos de ortodoncia pueden durar de 12-24 meses. Durante tu consulta inicial, te proporcionaremos un plan de tratamiento detallado con tiempos específicos.',
       },
       {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        title: '¿Qué medidas de bioseguridad y esterilización siguen?',
         description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          'Cumplimos con los más altos estándares de bioseguridad. Todos nuestros instrumentos son esterilizados en autoclave, utilizamos barreras de protección desechables, y seguimos protocolos estrictos de desinfección. Tu seguridad y la de nuestro equipo es nuestra prioridad máxima.',
       },
-    ]}
-  />
-
-  <!-- Stats Widget ****************** -->
-
-  <Stats
-    stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
     ]}
   />
 </Layout>
